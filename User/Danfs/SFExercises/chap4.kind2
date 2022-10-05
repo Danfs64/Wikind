@@ -264,7 +264,6 @@ Remove_decreases_count (List.cons (Nat.succ n) xs) =
   ind
 
 // 3.4.2
-// TODO
 // The amount of a element `n` in the union of `xs` and `ys` is equal to the amount in `xs` and `ys` summed
 Bag_count_sum (n : Nat) (xs : Bag) (ys : Bag) : Equal (Nat.add (Count n xs) (Count n ys)) (Count n (Sum xs ys))
 Bag_count_sum n  List.nil        ys = Equal.refl
